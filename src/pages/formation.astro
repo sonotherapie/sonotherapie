@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components';
+---
+<BaseLayout title="Homepage">
+
+<!-- Three Boxes -->
+    <div class="album py-5 bg-light">
+      <div>
+        <div class="row row-cols-1 row-cols-md-2 m-5">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Vapakaia</p>
+                <p class="card-text">Description de la formation au Vapakaia</p>
+                <p class="card-text">durée / CHF xxx.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#vapakaia" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Ayuma</p>
+                <p class="card-text">Description de la formation au Ayuma</p>
+                <p class="card-text">durée / CHF xxx.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#ayuma" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <article class="shadow p-3 m-5 bg-light rounded-lg" id="vapakaia">
+            <h2>Formation Vapakaia</h2>
+            <p>Au cœur des sons vous offre également la possibilité de devenir praticien(ne) Vapa-Kaìa.</p>
+            <p>Au cours d’une journée de formation, vous apprendrez ce protocole de soin spécifique, composé de
+                pressions, de sons et de vibrations. Lors de cet apprentissage, vous utiliserez les 3 bols indiqués
+                ci-après, avec lesquels vous repartirez pour votre plus grand plaisir ( Si vous avez déjà ces
+                fréquences, merci de me contacter. Vous pourrez bien sûr suivre la formation avec votre matériel).</p>
+            <ul>
+                <li>Un Bol Vapa-Kaìa, aux "ondes hydrogène – gamma".<br>
+                    Il relie le corps et l’âme et crée un équilibre émotionnel en travaillant sur l’aura.<br>
+                    Poids environ 2kg</li>
+                <li>Un Bol Vapa-Yaka, "la fréquence de l’eau, 178,13 Hz"<br>
+                    Sa fréquence amène fluidité et libère les charges négatives.<br>
+                    Poids environ 1kg500</li>
+                <li>Un Bol Vapa- Kesana, aux bio-rythme du corps selon Dr. Wilhelm Fliess.<br>
+                    Ce bol travaille sur tout le corps, amène force et vitalité.<br>
+                    Poids environ 1kg</li>
+            </ul>
+            <p>Aucun prérequis n’est nécessaire pour suivre ce cours. </p>
+            <p>Tarif du cours : 1190.-CHF<br>
+                Comprend les 3 bols d'exceptions plus un mini bol offert et le cours d’une durée de 8h avec exercices
+                pratiques.
+                Maximum 3 participant(e)s.<br>
+                Si vous souhaitez ce cours en privé, rien que pour vous, le prix du cours est majoré de 110.- CHF</p>
+            <p>Calendrier inscription au cours en groupe&nbsp;: <a href="https://calendly.com/vapa-kaia/"><img
+                        src="images/calendly-logo1.png" class="button"></a></p>
+            <p>Pour le cours en privé veuillez me contacter directement au 079 350 41 36 ou par e-mail <a
+                    href="mailto:info@sonotherapie.ch">info@sonotherapie.ch</a></p>
+        </article>
+
+        <img src="images/P1013993.jpg" class="w-100" alt="">
+
+</BaseLayout>
+

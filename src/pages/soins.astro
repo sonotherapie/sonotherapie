@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/Tailwind.astro';
+import { Markdown } from 'astro/components';
+---
+<BaseLayout title="Homepage">
+
+<!-- Three Boxes -->
+    <div class="album py-5 bg-light">
+      <div>
+        <div class="row row-cols-1 row-cols-md-3 m-5">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Voyage sonore</p>
+                <p class="card-text">Soin magique qui vous plonge dans un état de bien-être profond</p>
+                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#voyage" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Table d'harmonie</p>
+                <p class="card-text">Description du soin table d'harmonie</p>
+                <p class="card-text">30 min. / CHF 80.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#table" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20201008-150710-048-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Jalaka</p>
+                <p class="card-text">Combinaison du soin table d'harmonie et bols chantants tibétains</p>
+                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#jalaka" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 m-5">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Vapakaia</p>
+                <p class="card-text">Le Vapa-Kaìa, basé sur une technique ancestrale, est un mélange de doux massages
+                  par pressions sur le corps, accompagnés par les sons magiques et les vibrations de bols chantants thérapeutiques,
+                  l’utilisation d’huiles essentielles et de pierres chaudes</p>
+                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#vapakaia" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
+              <div class="card-body">
+                <p class="card-header">Ayuma</p>
+                <p class="card-text">Description du soin Ayuma</p>
+                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#ayuma" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <img src="images/165719-022.jpg" class="w-100 shadow-lg" alt="">
+
+    <article class="shadow p-3 m-5 bg-light rounded-lg" id="voyage">
+      <h2>Séances</h2>
+      <blockquote class="blockquote font-italic">Soin méditatif et thérapeutique par les vibrations & les sons
+      </blockquote>
+      <div class="card rounded-lg mb-3" sstyle="width: 50%;">
+        <div class="card-body bg-warning">
+          <h5 class="card-title">Covid-19</h5>
+          <p class="card-text">Toutes les mesures sanitaires de protection et les gestes barrières sont
+            appliqués par votre thérapeute.</p>
+        </div>
+      </div>
+      <p>La personne est couchée sur un matelas avec ses habits et parfois sous une couverture.
+        Gong, bols chantants thérapeutiques, de cristal, mais aussi le handpan, le tambour et les koshis seront
+        joués tout autour du votre corps.</p>
+      <p>Certaines personnes vont le vivre simplement comme un voyage sonore relaxant. Pour
+        d’autres, le corps se déstresse, s’harmonise et s’équilibre. Il en résulte parfois même la libération de
+        blocages, de douleurs
+        ou de troubles. Mais avant tout, vous allez vivre un moment de profonde détente, puisque
+        cette forme de thérapie enveloppe votre corps, votre âme et votre esprit dans un vrai cocon.</p>
+      <p>Au plaisir de vous faire vivre ce moment hors du temps.</p>
+      <p>Paiement en espèces ou <img src="images/twint.png" class="button"></a> ou <img src="images/Logo_Revolut.png"
+          class="button"></a></p>
+    </article>
+
+</BaseLayout>
+

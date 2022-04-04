@@ -1,13 +1,114 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components';
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Homepage">
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/public/assets/1920x1080-bols-poele-fenetre.jpg" class="d-block w-100" alt="Sonothérapie" />
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Un lieu chaleureux</h1>
+            <p>Tout est fait pour que vous soyez à l'aise...</p>
+            <p><a class="btn btn-lg btn-primary" href="./soins">Les soins</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/assets/1920x1080-lit-lanterne.jpg" class="d-block w-100" alt="Sonothérapie" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="./formation">Les formations</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/assets/1920x1080-chambre-vue-generale.jpg" class="d-block w-100" alt="Sonothérapie" />
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="./blog">Blog</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/assets/1920x1080-vue-dessus.jpg" class="d-block w-100" alt="Sonothérapie" />
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="./#contact">Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+        <img class="w-50 mx-auto d-block" src="/public/logos/logo-complet.png">
+
+        <article class="shadow p-3 m-5 bg-light rounded-lg" id="questce">
+            <h2>Qu'est-ce ?</h2>
+            <p>La thérapie par les sons, appelée aussi la Sonologie ou la Sonothérapie, est une technique
+                thérapeutique très ancienne qui apporte beaucoup de bienfaits. Elle se base sur la
+                résonance physique et émotionnelle du corps.</p>
+            <p>Les différents sons utilisés agissent comme un massage pour le corps et l’esprit. À
+                travers l’écoute des sons de la nature ou de certains instruments, le corps et l’esprit s’apaisent et se
+                reconnectent. La thérapie par les sons est accessible à tous, à tout âge et a de multiples applications.
+            </p>
+        </article>
+        
+        <img src="/public/assets/1920x1080-tambour.jpg" class="w-100" alt="">
+
+        <article class="shadow p-3 m-5 bg-light rounded-lg" id="parcours">
+            <h2>Mon parcours</h2>
+            <blockquote class="blockquote font-italic">La vibration est au coeur de tout ce qui existe</blockquote>
+            <p>Passionnée par le monde des énergies et des sons, j'ai suivi une formation complète en soins
+                sonores auprès de l’<a href="https://www.prana-soma.com/">ACADÉMIE SUISSE de thérapie sonore &
+                    énergétique</a>. Celle-ci a renforcé mes connaissances
+                intuitives développées au cours de ma vie, ainsi que ma conviction qu’avec beaucoup d’amour et mes
+                instruments, il est possible d’apporter au corps ainsi qu'à l’âme humaine et animale un bien-être
+                profond et régénérant.</p>
+        </article>
+
+        <img src="/public/assets/1920x1080-eve-bol-baton.jpg" class="w-100" alt="">
+
+        <article class="shadow p-3 m-5 bg-light rounded-lg" id="contact">
+            <h2>Contact</h2>
+            <p><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Eve Ossent<br>
+                <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;079 350 41 36<br>
+                <i class="fa fa-address-book"></i>&nbsp;<a href="https://goo.gl/maps/7u7HkVTk5oSWSvEFA">Chemin des Grives 6<br>1264 St-Cergue (Suisse)</a><br>
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a
+                    href="mailto:info@sonotherapie.ch">info@sonotherapie.ch</a><br>
+                <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<a
+                    href="http://calendly.com/aucoeurdessons">Prendre rendez-vous</a>
+            </p>
+        </article>
+
+        <img src="/public/assets/1033x1033-plan.png" class="w-100 bg-dark" alt="">
+  
+</BaseLayout>
+
+<style>
+    #myCarousel {
+        padding-top: 56px
+    }
+</style>
