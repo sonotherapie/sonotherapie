@@ -4,7 +4,7 @@ export const SOINS = {
         titre: "Voyage sonore",
         description: "Soin magique qui vous plonge dans un état de bien-être profond",
         prix: "1h à 1h30 / CHF 120.-",
-        lien: '#voyage',
+        lien: "#voyage",
         photo: "/assets/2022-bols-chantants.webp"
     },
     table: {
