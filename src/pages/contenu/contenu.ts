@@ -1,3 +1,4 @@
+<! -- and -->
 export const SOINS = {
     voyage: {
         titre: "Voyage sonore",
