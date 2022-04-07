@@ -4,13 +4,13 @@ export const SITE = {
     footer: '© 2022 Au Coeur des Sons - Copyright | info@sonotherapie.ch'
 }
 
-export const NAV_ITEMS = {
+export const NAVIGATION = {
     accueil: {
         path: '/',
         title: 'ACCUEIL'
     },
     soins: {
-        path: '/soins',
+        path: '/soins2',
         title: 'SOINS'
     },
     formation: {
