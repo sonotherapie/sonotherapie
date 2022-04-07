@@ -1,4 +1,5 @@
 ---
+import {SOINS} from './contenu/contenu.ts'
 import BaseLayout from '../layouts/BaseLayout.astro'
 const title = 'Les soins'
 ---
@@ -10,14 +11,14 @@ const title = 'Les soins'
         <div class="row row-cols-1 row-cols-md-3 m-3">
           <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/assets/2022-bols-chantants.webp" class="" alt="Sonothérapie" />
+              <img src={SOINS.voyage.photo} class="" alt="Sonothérapie" />
               <div class="card-body">
-                <p class="card-header">Voyage sonore</p>
-                <p class="card-text">Soin magique qui vous plonge dans un état de bien-être profond</p>
-                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <p class="card-header">{SOINS.voyage.titre}</p>
+                <p class="card-text">{SOINS.voyage.description}</p>
+                <p class="card-text">{SOINS.voyage.prix}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="#voyage" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                    <a href={SOINS.voyage.lien} class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
                   </div>
                   <div class="btn-group">
                     <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
@@ -28,14 +29,14 @@ const title = 'Les soins'
           </div>
           <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/assets/1920x1080-table-harmonie.jpg" class="" alt="Sonothérapie" />
+              <img src={SOINS.table.photo} class="" alt="Sonothérapie" />
               <div class="card-body">
-                <p class="card-header">Table d'harmonie</p>
-                <p class="card-text">Description du soin table d'harmonie</p>
-                <p class="card-text">30 min. / CHF 80.-</p>
+                <p class="card-header">{SOINS.table.titre}</p>
+                <p class="card-text">{SOINS.table.description}</p>
+                <p class="card-text">{SOINS.table.prix}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="#table" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                    <a href={SOINS.table.lien} class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
                   </div>
                   <div class="btn-group">
                     <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>

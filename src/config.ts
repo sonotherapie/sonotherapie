@@ -1,7 +1,7 @@
 export const SITE = {
     title: 'Au Coeur des Sons',
     description: 'Au Coeur des Sons, des soins avec la sonothérapie',
-    footer: '© 2022 Au Coeur des Sons Copyright | info@sonotherapie.ch'
+    footer: '© 2022 Au Coeur des Sons - Copyright | info@sonotherapie.ch'
 }
 
 export const NAV_ITEMS = {
