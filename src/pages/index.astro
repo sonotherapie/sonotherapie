@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Markdown } from 'astro/components';
+const title = 'Accueil'
 ---
-<BaseLayout title="Homepage">
+<BaseLayout content={{title}}>
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -18,37 +18,37 @@ import { Markdown } from 'astro/components';
           <div class="carousel-caption text-start">
             <h1>Un lieu chaleureux</h1>
             <p>Tout est fait pour que vous soyez à l'aise...</p>
-            <p><a class="btn btn-lg btn-primary" href="./soins">Les soins</a></p>
+            <p><a class="btn btn-lg btn-dark" href="/soins">Les soins</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="/assets/1920x1080-lit-lanterne.jpg" class="d-block w-100" alt="Sonothérapie" />
         <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+          <div class="carousel-caption text-start">
+            <h1>Apprendre</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="./formation">Les formations</a></p>
+            <p><a class="btn btn-lg btn-dark" href="/formation">Les formations</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="/assets/1920x1080-chambre-vue-generale.jpg" class="d-block w-100" alt="Sonothérapie" />
         <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
+          <div class="carousel-caption text-start">
+            <h1>Comprendre</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="./blog">Blog</a></p>
+            <p><a class="btn btn-lg btn-dark" href="/blog">Blog</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="/assets/1920x1080-vue-dessus.jpg" class="d-block w-100" alt="Sonothérapie" />
         <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="./#contact">Contact</a></p>
+          <div class="carousel-caption text-start">
+            <h1>Vous êtes prêt ?</h1>
+            <p>N'hésitez pas, contactez-moi...</p>
+            <p><a class="btn btn-lg btn-dark" href="/#contact">Contact</a></p>
           </div>
         </div>
       </div>
@@ -65,15 +65,11 @@ import { Markdown } from 'astro/components';
 
         <img class="w-50 mx-auto d-block" src="/logos/logo-complet.png">
 
-        <article class="shadow p-3 m-5 bg-light rounded-lg" id="questce">
-            <h2>Qu'est-ce ?</h2>
-            <p>La thérapie par les sons, appelée aussi la Sonologie ou la Sonothérapie, est une technique
-                thérapeutique très ancienne qui apporte beaucoup de bienfaits. Elle se base sur la
-                résonance physique et émotionnelle du corps.</p>
-            <p>Les différents sons utilisés agissent comme un massage pour le corps et l’esprit. À
-                travers l’écoute des sons de la nature ou de certains instruments, le corps et l’esprit s’apaisent et se
-                reconnectent. La thérapie par les sons est accessible à tous, à tout âge et a de multiples applications.
-            </p>
+        <article class="shadow p-3 m-3 bg-light rounded-lg" id="accueil">
+            <h2>Accueil</h2>
+            <p>La thérapie par les sons, appelée aussi Sonologie ou la Sonothérapie, est une technique thérapeutique très ancienne. Elle se base sur la résonance physique et émotionnelle du corps.</p>
+            <p>Les différents sons utilisés agissent comme un massage pour le corps et l’esprit. À travers l’ếcoute des sons de la nature ou de certains instruments, le corps et l’esprit s’apaisent et de reconnectent.</p>
+            <p>Le but, c’est de solliciter les pouvoirs d’auto-guérison en jouant et en activant les bols. Ainsi les vibrations sont libérés, ce qui harmonise le corps, l’âme et l’esprit. La thérapie par les sons est accessible à tous, à tout âge et a de multiples applications.</p>
         </article>
         
         <img src="/assets/1920x1080-tambour.jpg" class="w-100" alt="">

@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Markdown } from 'astro/components';
+const title = 'Les formations'
 ---
-<BaseLayout title="Homepage">
+<BaseLayout content={{title}}>
 
 <!-- Three Boxes -->
     <div class="album py-5 bg-light">
       <div>
-        <div class="row row-cols-1 row-cols-md-2 m-5">
+        <div class="row row-cols-1 row-cols-md-2 m-3">
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm mb-2">
               <img src="/images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Vapakaia</p>
@@ -31,7 +31,7 @@ import { Markdown } from 'astro/components';
               <img src="/images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Ayuma</p>
-                <p class="card-text">Description de la formation au Ayuma</p>
+                <p class="card-text">Ayuma est un soin énergique qui apporte, par son touché apaisant et les sons, du calme et de la sérénité. Il nous réaligne, ouvre notre cœur et la douceur pour soi-même.</p>
                 <p class="card-text">durée / CHF xxx.-</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -66,10 +66,9 @@ import { Markdown } from 'astro/components';
                     Ce bol travaille sur tout le corps, amène force et vitalité.<br>
                     Poids environ 1kg</li>
             </ul>
-            <p>Aucun prérequis n’est nécessaire pour suivre ce cours. </p>
-            <p>Tarif du cours : 1190.-CHF<br>
-                Comprend les 3 bols d'exceptions plus un mini bol offert et le cours d’une durée de 8h avec exercices
-                pratiques.
+            <p>Aucun prérequis n’est nécessaire pour suivre ce cours.</p>
+            <p>Tarif du cours : 1190.-CHF<br>
+                Comprend les 3 bols d'exceptions plus un mini bol offert et le cours d’une durée de 8h avec exercices pratiques.
                 Maximum 3 participant(e)s.<br>
                 Si vous souhaitez ce cours en privé, rien que pour vous, le prix du cours est majoré de 110.- CHF</p>
             <p>Calendrier inscription au cours en groupe&nbsp;: <a href="https://calendly.com/vapa-kaia/"><img
@@ -79,6 +78,23 @@ import { Markdown } from 'astro/components';
         </article>
 
         <img src="/images/P1013993.jpg" class="w-100" alt="">
+
+        <article class="shadow p-3 m-5 bg-light rounded-lg" id="ayuma">
+            <h2>Cours, atelier Ayuma</h2>
+            <p>Ayuma la puissance du toucher apaisant.</p>
+            <p>Ayuma est un soin énergique qui apporte, par son touché apaisant et les sons, du calme et de la sérénité. Il nous réaligne, ouvre notre cœur et la douceur pour soi-même.</p>
+            <p>Vous apprendrez un protocole de soin très simple de 45 -50 minutes. Ce cours est ouvert à tout le monde souhaitant  intégrer un outil pour se faire du bien, faire du bien autour de soi. Les connaissances acquises peuvent bien entendu être utilisées dans le cadre d’un soin au sein de votre cabinet.</p>
+            <p>Le soin est composé de différentes appositions des mains, il ne s’agit pas pour le praticien de se connecter à un canal ou autres.  Il s’agit de revenir dans la simplicité, dans le cœur, d’ouvrir sa propre lumière, et de la partager autour de soi. Les différentes positions sont extrêmement relaxantes et apaisantes, sur chaque position une intention particulière est émise.</p>
+            <p>Après une purification,  une jolie entrée toute en douceur, une harmonisation des centres d’énergie avec votre bol et grâce aux différentes positions du toucher apaisant,  vous allez travailler les lignes énergétiques avec à nouveau votre bol chantant thérapeutique.</p>
+            <p>Vous apprendrez aussi à créer une eau sonore, qui va accompagner la personne après sa séance.</p>
+            <h3>Prix du cours: CHF 550.-</h3>
+            <p>Le prix du cours inclut:</p>
+            <ul>
+              <li>un magnifique bol fleur de vie de 1 kg ou Full Moon avec mailloche et stick pour faire chanter votre bol (selon disponibilité)</li>
+              <li>Une pyramide de Sélénite, un sachet de pierres, ainsi que des flacons pour vos premières eaux sonores.</li>
+            </ul>
+            <p>Ce cours se donne sur une petite journée de 9h30 à 15h30 environ.</p>
+        </article>
 
 </BaseLayout>
 

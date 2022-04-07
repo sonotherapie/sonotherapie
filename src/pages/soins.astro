@@ -1,15 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Les soins'
 ---
-<BaseLayout title="Homepage">
+<BaseLayout content={{title}}>
 
 <!-- Three Boxes -->
     <div class="album py-5 bg-light">
       <div>
-        <div class="row row-cols-1 row-cols-md-3 m-5">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-3 m-3">
+          <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <img src="/assets/2022-bols-chantants.webp" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Voyage sonore</p>
                 <p class="card-text">Soin magique qui vous plonge dans un état de bien-être profond</p>
@@ -25,9 +26,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
+              <img src="/assets/1920x1080-table-harmonie.jpg" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Table d'harmonie</p>
                 <p class="card-text">Description du soin table d'harmonie</p>
@@ -45,7 +46,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="/images/20201008-150710-048-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <img src="/assets/2022-massage-sonore.jpg" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Jalaka</p>
                 <p class="card-text">Combinaison du soin table d'harmonie et bols chantants tibétains</p>
@@ -62,10 +63,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 m-5">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 m-3">
+          <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/images/20201008-150837-049-SONY-ILCE-7M2.jpg" class="" alt="Sonothérapie" />
+              <img src="/assets/1920x1080-chambre-vue-generale.jpg" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Vapakaia</p>
                 <p class="card-text">Le Vapa-Kaìa, basé sur une technique ancestrale, est un mélange de doux massages
@@ -85,10 +86,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="/images/20200703-155113-667-Panasonic-DC-GX9.jpg" class="" alt="Sonothérapie" />
+              <img src="/public/assets/2022-logo-ayuma.png" class="" alt="Sonothérapie" />
               <div class="card-body">
                 <p class="card-header">Ayuma</p>
-                <p class="card-text">Description du soin Ayuma</p>
+                <p class="card-text">Ayuma est un soin énergique qui apporte,  par son toucher apaisant et le son des bols, du calme et de la sérénité.  Il nous réaligne, ouvre notre cœur et prodigue de la douceur pour soi-même.</p>
                 <p class="card-text">1h à 1h30 / CHF 120.-</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -105,30 +106,52 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
 
-
-
     <img src="/images/165719-022.jpg" class="w-100 shadow-lg" alt="">
 
-    <article class="shadow p-3 m-5 bg-light rounded-lg" id="voyage">
-      <h2>Séances</h2>
-      <blockquote class="blockquote font-italic">Soin méditatif et thérapeutique par les vibrations & les sons
-      </blockquote>
-      <div class="card rounded-lg mb-3" style="width: 50%;">
-        <div class="card-body bg-warning">
-          <h5 class="card-title">Covid-19</h5>
-          <p class="card-text">Toutes les mesures sanitaires de protection et les gestes barrières sont
-            appliqués par votre thérapeute.</p>
-        </div>
-      </div>
-      <p>La personne est couchée sur un matelas avec ses habits et parfois sous une couverture.
-        Gong, bols chantants thérapeutiques, de cristal, mais aussi le handpan, le tambour et les koshis seront
-        joués tout autour du votre corps.</p>
-      <p>Certaines personnes vont le vivre simplement comme un voyage sonore relaxant. Pour
-        d’autres, le corps se déstresse, s’harmonise et s’équilibre. Il en résulte parfois même la libération de
-        blocages, de douleurs
-        ou de troubles. Mais avant tout, vous allez vivre un moment de profonde détente, puisque
-        cette forme de thérapie enveloppe votre corps, votre âme et votre esprit dans un vrai cocon.</p>
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="voyage">
+      <h2>Voyage sonore</h2>
+      <p>La personne est couchée sur un matelas. Bols chantants thérapeutiques, de cristal, mais aussi gong, handpan, tambour et koshis seront joués autour et, ou sur son corps habillé.</p>
+      <p>Certaines personnes vont le vivre comme un voyage sonore relaxant. Pour d’autres, le corps se déstresse, s’harmonise et s’équilibre. Il en résulte parfois la libération de blocages, de douleurs ou de troubles. Avant tout, vous allez vivre un moment de profonde détente, puisque cette forme de thérapie enveloppe votre corps, votre âme et votre esprit dans un vrai cocon.</p>
+      <h3>Quelques bienfaits</h3>
+      <ul>
+        <li>Relaxation, détente musculaire et libération des émotions</li>
+        <li>aide le mental à lâcher prise</li>
+        <li>vertus antalgiques</li>
+        <li>augmentation des capacités de concentration</li>
+        <li>renforcement du système immunitaire</li>
+        <li>amélioration de l’humeur</li>
+        <li>harmonisation physique et psychologique</li>
+        <li>amélioration du sommeil et de la digestion</li>
+        <li>développement de la créativité</li>
+        <li>et bien d’autres vertus</li>
+      </ul>
       <p>Au plaisir de vous faire vivre ce moment hors du temps.</p>
+    </article>
+
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="table">
+      <h2>Table d'harmonie</h2>
+      <p>Description du soin...</p>
+    </article>
+
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="jalaka">
+      <h2>Jalaka</h2>
+      <p>Description du soin...</p>
+    </article>
+
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="vapakaia">
+      <h2>Vapakaia</h2>
+      <p>Description du soin...</p>
+    </article>
+
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="ayuma">
+      <h2>Ayuma</h2>
+      <p>Ce soin est composé de différentes appositions des mains qui sont extrêmement relaxantes et apaisantes, et sur chaque position, une intention particulière est émise.</p>
+      <p>Après une purification, une jolie entrée toute en douceur, une harmonisation des centres d’énergie avec les bols et les différentes positions du toucher apaisant,  le praticien va travailler les lignes énergétiques avec un bol chantant thérapeutique.</p>
+      <p>Pour terminer, vous recevrez également une eau sonore, qui va vous accompagner après votre séance.</p>
+    </article>
+
+    <article class="shadow p-3 m-3 bg-light rounded-lg" id="voyage">
+      <h2>Paiement</h2>
       <p>Paiement en espèces ou <img src="/images/twint.png" class="button"> ou <img src="/images/Logo_Revolut.png"
           class="button"></p>
     </article>

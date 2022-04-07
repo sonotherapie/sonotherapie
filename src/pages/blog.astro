@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Markdown } from 'astro/components';
+const title = 'Le blog'
 ---
-<BaseLayout title="Homepage">
+<BaseLayout content={{title}}>
 
 <article class="shadow p-3 mx-auto bg-light rounded-lg" id="blog">
       <h2>Blog</h2>
