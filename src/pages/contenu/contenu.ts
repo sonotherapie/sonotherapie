@@ -1,4 +1,5 @@
-<! -- Contenu pour la page SOINS -->
+// Contenu pour la page SOINS
+
 export const SOINS = {
     voyage: {
         titre: "Voyage sonore",
@@ -15,8 +16,9 @@ export const SOINS = {
         photo: "/assets/1920x1080-table-harmonie.jpg"
     },
 }
-<! -- Contenu pour la page FORMATION -->
 
-<! -- Contenu pour la page BLOG -->
+// Contenu pour la page FORMATION
 
-<! -- Contenu pour la page SHOP -->
+// Contenu pour la page BLOG
+
+// Contenu pour la page SHOP
