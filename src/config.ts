@@ -10,7 +10,7 @@ export const NAVIGATION = {
         title: 'ACCUEIL'
     },
     soins: {
-        path: '/soins2',
+        path: '/soins',
         title: 'SOINS'
     },
     formation: {
