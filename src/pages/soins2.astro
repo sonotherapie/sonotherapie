@@ -1,5 +1,6 @@
 ---
 import {SOINS} from '../contenu.ts'
+import { Markdown } from 'astro/components';
 import BaseLayout from '../layouts/BaseLayout.astro'
 const title = 'Les soins'
 ---
@@ -47,14 +48,14 @@ const title = 'Les soins'
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="/assets/2022-massage-sonore.jpg" class="" alt="Sonothérapie" />
+              <img src={SOINS.jalaka.photo} class="" alt="Sonothérapie" />
               <div class="card-body">
-                <p class="card-header">Jalaka</p>
-                <p class="card-text">Combinaison du soin table d'harmonie et bols chantants tibétains</p>
-                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <p class="card-header">{SOINS.jalaka.titre}</p>
+                <p class="card-text">{SOINS.jalaka.description}</p>
+                <p class="card-text">{SOINS.jalaka.prix}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="#jalaka" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                    <a href={SOINS.jalaka.lien} class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
                   </div>
                   <div class="btn-group">
                     <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
@@ -67,16 +68,14 @@ const title = 'Les soins'
         <div class="row row-cols-1 row-cols-md-2 m-3">
           <div class="col mb-2">
             <div class="card shadow-sm">
-              <img src="/assets/1920x1080-chambre-vue-generale.jpg" class="" alt="Sonothérapie" />
+              <img src={SOINS.vapakaia.photo} class="" alt="Sonothérapie" />
               <div class="card-body">
-                <p class="card-header">Vapakaia</p>
-                <p class="card-text">Le Vapa-Kaìa, basé sur une technique ancestrale, est un mélange de doux massages
-                  par pressions sur le corps, accompagnés par les sons magiques et les vibrations de bols chantants thérapeutiques,
-                  l’utilisation d’huiles essentielles et de pierres chaudes</p>
-                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <p class="card-header">{SOINS.vapakaia.titre}</p>
+                <p class="card-text">{SOINS.vapakaia.description}</p>
+                <p class="card-text">{SOINS.vapakaia.prix}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="#vapakaia" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                    <a href={SOINS.vapakaia.lien} class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
                   </div>
                   <div class="btn-group">
                     <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
@@ -87,14 +86,14 @@ const title = 'Les soins'
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="/public/assets/2022-logo-ayuma.png" class="" alt="Sonothérapie" />
+              <img src={SOINS.ayuma.photo} class="" alt="Sonothérapie" />
               <div class="card-body">
-                <p class="card-header">Ayuma</p>
-                <p class="card-text">Ayuma est un soin énergique qui apporte,  par son toucher apaisant et le son des bols, du calme et de la sérénité.  Il nous réaligne, ouvre notre cœur et prodigue de la douceur pour soi-même.</p>
-                <p class="card-text">1h à 1h30 / CHF 120.-</p>
+                <p class="card-header">{SOINS.ayuma.titre}</p>
+                <p class="card-text">{SOINS.ayuma.description}</p>
+                <p class="card-text">{SOINS.ayuma.prix}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="#ayuma" class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
+                    <a href={SOINS.ayuma.lien} class="btn btn-sm btn-outline-secondary" role="button">En savoir plus...</a>
                   </div>
                   <div class="btn-group">
                     <a href="http://calendly.com/aucoeurdessons" class="btn btn-sm btn-outline-secondary" role="button">Prendre rendez-vous</a>
@@ -107,26 +106,37 @@ const title = 'Les soins'
       </div>
     </div>
 
-    <img src="/images/165719-022.jpg" class="w-100 shadow-lg" alt="">
+    <img src="/assets/1920x1080-bol-batte-rouge.jpg" class="w-100 shadow-lg" alt="">
 
     <article class="shadow p-3 m-3 bg-light rounded-lg" id="voyage">
-      <h2>Voyage sonore</h2>
-      <p>La personne est couchée sur un matelas. Bols chantants thérapeutiques, de cristal, mais aussi gong, handpan, tambour et koshis seront joués autour et, ou sur son corps habillé.</p>
-      <p>Certaines personnes vont le vivre comme un voyage sonore relaxant. Pour d’autres, le corps se déstresse, s’harmonise et s’équilibre. Il en résulte parfois la libération de blocages, de douleurs ou de troubles. Avant tout, vous allez vivre un moment de profonde détente, puisque cette forme de thérapie enveloppe votre corps, votre âme et votre esprit dans un vrai cocon.</p>
-      <h3>Quelques bienfaits</h3>
-      <ul>
-        <li>Relaxation, détente musculaire et libération des émotions</li>
-        <li>aide le mental à lâcher prise</li>
-        <li>vertus antalgiques</li>
-        <li>augmentation des capacités de concentration</li>
-        <li>renforcement du système immunitaire</li>
-        <li>amélioration de l’humeur</li>
-        <li>harmonisation physique et psychologique</li>
-        <li>amélioration du sommeil et de la digestion</li>
-        <li>développement de la créativité</li>
-        <li>et bien d’autres vertus</li>
-      </ul>
-      <p>Au plaisir de vous faire vivre ce moment hors du temps.</p>
+    <Markdown>
+
+    <!-- Début du contenu à modifier -->
+
+      ## Voyage sonore
+
+      La personne est couchée sur un matelas. Bols chantants thérapeutiques, de cristal, mais aussi gong, handpan, tambour et koshis seront joués autour et, ou sur son corps habillé.
+
+      Certaines personnes vont le vivre comme un voyage sonore relaxant. Pour d’autres, le corps se déstresse, s’harmonise et s’équilibre. Il en résulte parfois la libération de blocages, de douleurs ou de troubles. Avant tout, vous allez vivre un moment de profonde détente, puisque cette forme de thérapie enveloppe votre corps, votre âme et votre esprit dans un vrai cocon.
+
+      ### Quelques bienfaits
+
+      * Relaxation, détente musculaire et libération des émotions
+      * aide le mental à lâcher prise
+      * vertus antalgiques
+      * augmentation des capacités de concentration
+      * renforcement du système immunitaire
+      * amélioration de l’humeur
+      * harmonisation physique et psychologique
+      * amélioration du sommeil et de la digestion
+      * développement de la créativité
+      * et bien d’autres vertus
+      
+      Au plaisir de vous faire vivre ce moment hors du temps.
+
+      <!-- Fin du contenu à modifier -->
+
+      </Markdown>
     </article>
 
     <article class="shadow p-3 m-3 bg-light rounded-lg" id="table">
@@ -145,15 +155,26 @@ const title = 'Les soins'
     </article>
 
     <article class="shadow p-3 m-3 bg-light rounded-lg" id="ayuma">
-      <h2>Ayuma</h2>
-      <p>Ce soin est composé de différentes appositions des mains qui sont extrêmement relaxantes et apaisantes, et sur chaque position, une intention particulière est émise.</p>
-      <p>Après une purification, une jolie entrée toute en douceur, une harmonisation des centres d’énergie avec les bols et les différentes positions du toucher apaisant,  le praticien va travailler les lignes énergétiques avec un bol chantant thérapeutique.</p>
-      <p>Pour terminer, vous recevrez également une eau sonore, qui va vous accompagner après votre séance.</p>
+    <Markdown>
+
+    <!-- Début du contenu à modifier -->
+
+      ## Ayuma
+
+      Ce soin est composé de différentes appositions des mains qui sont extrêmement relaxantes et apaisantes, et sur chaque position, une intention particulière est émise.
+
+      Après une purification, une jolie entrée toute en douceur, une harmonisation des centres d’énergie avec les bols et les différentes positions du toucher apaisant,  le praticien va travailler les lignes énergétiques avec un bol chantant thérapeutique.
+
+      Pour terminer, vous recevrez également une eau sonore, qui va vous accompagner après votre séance.
+
+      <!-- Fin du contenu à modifier -->
+
+      </Markdown>
     </article>
 
     <article class="shadow p-3 m-3 bg-light rounded-lg" id="voyage">
       <h2>Paiement</h2>
-      <p>Paiement en espèces ou <img src="/images/twint.png" class="button"> ou <img src="/images/Logo_Revolut.png"
+      <p>Paiement en espèces ou <img src="/logos/twint.png" class="button"> ou <img src="/logos/revolut.png"
           class="button"></p>
     </article>
 
