@@ -13,7 +13,7 @@ export const SOINS = {
         lien: "#table",
         photo: "/assets/1920x1080-table-harmonie.jpg"
     },
-    ayuma: {
+    jalanka: {
         titre: "Ayuma",
         description: "Ayuma est un soin énergique qui apporte, par son toucher apaisant et le son des bols, du calme et de la sérénité. Il nous réaligne, ouvre notre cœur et prodigue de la douceur pour soi-même.",
         prix: "1h à 1h30 / CHF 120.-",
@@ -27,7 +27,7 @@ export const SOINS = {
         lien: "#vapakaia",
         photo: "/assets/1920x1080-chambre-vue-generale.jpg"
     },
-    jalaka: {
+    ayuma: {
         titre: "Vapa Kaia Energy",
         description: "Combinaison du soin table d'harmonie et bols chantants tibétains",
         prix: "1h à 1h30 / CHF 120.-",
