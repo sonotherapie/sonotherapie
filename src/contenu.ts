@@ -9,12 +9,12 @@ export const SOINS = {
     table: {
         titre: "Table d'harmonie",
         description: "Description du soin",
-        prix: "30 min. / CHF 80.-",
+        prix: "30 min. / CHF 120.-",
         lien: "#table",
         photo: "/assets/1920x1080-table-harmonie.jpg"
     },
     jalaka: {
-        titre: "Jalaka",
+        titre: "Jalanka",
         description: "Combinaison du soin table d'harmonie et bols chantants tibétains",
         prix: "1h à 1h30 / CHF 120.-",
         lien: "#jalaka",
