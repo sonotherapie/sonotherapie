@@ -8,7 +8,7 @@ export const SOINS = {
     },
     table: {
         titre: "Yalanka - Table d'harmonie",
-        description: "Description du soin",
+        description: "Description du soin tuotuout",
         prix: "30 min. / CHF 120.-",
         lien: "#table",
         photo: "/assets/1920x1080-table-harmonie.jpg"
