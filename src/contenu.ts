@@ -7,21 +7,21 @@ export const SOINS = {
         photo: "/assets/2022-bols-chantants.webp"
     },
     table: {
-        titre: "Table d'harmonie",
+        titre: "Yalanka - Table d'harmonie",
         description: "Description du soin",
         prix: "30 min. / CHF 120.-",
         lien: "#table",
         photo: "/assets/1920x1080-table-harmonie.jpg"
     },
     jalaka: {
-        titre: "Jalanka",
+        titre: "Vapakaia Energy",
         description: "Combinaison du soin table d'harmonie et bols chantants tibétains",
         prix: "1h à 1h30 / CHF 120.-",
         lien: "#jalaka",
         photo: "/assets/2022-massage-sonore.jpg"
     },
     vapakaia: {
-        titre: "Vapakaia",
+        titre: "Vapakaìa",
         description: "Le Vapa-Kaìa, basé sur une technique ancestrale, est un mélange de doux massages par pressions sur le corps, accompagnés par les sons magiques et les vibrations de bols chantants thérapeutiques, l’utilisation d’huiles essentielles et de pierres chaudes",
         prix: "1h à 1h30 / CHF 120.-",
         lien: "#vapakaia",
